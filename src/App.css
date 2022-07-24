@@ -1,13 +1,16 @@
 @font-face {
-	font-family: SourceCodeProRegular;
-	src: url(./components/TTF/SourceCodePro-Regular.ttf);
+	font-family: AlbaMatter;
+	src: url(./components/TTF/ALBAM___.TTF)
+}
+@font-face {
+	font-family: AlbaRegular;
+	src: url(./components/TTF/ALBA____.TTF)
 }
 
 @font-face {
-	font-family: SourceCodeProBold;
-	src: url(./components/TTF/SourceCodePro-Bold.ttf);
+	font-family: Dillan;
+	src: url(./components/TTF/MADE\ Dillan\ PERSONAL\ USE.otf);
 }
-
 
 * {
 	box-sizing: border-box;
@@ -58,10 +61,10 @@
 
 @keyframes move {
 	from {
-		box-shadow: 0px 0px rgb(164, 164, 164);
+		box-shadow: 0px 0px #D9A3AC;
 	}
 	to {
-		box-shadow: 13px 13px  rgb(164, 164, 164)
+		box-shadow: 13px 13px #D9A3AC;
 	}
 
 	
@@ -73,17 +76,23 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 	text-align: center;
-	background-color: #f5f5f5;
+	background-color: #F2DEDC;
+	height: 100vh;
+	width: 100vw;
 	
 }
 
 body {
-	min-height: 89vh;
+	min-height: 95vh;
 	min-width: 100vw;
 	line-height: 1;
-	background-color: #f5f5f5;
-	color: #191919;
+	background-color: #F2DEDC;
+	color: #f592c0;
 }
+
+/* h1 {
+	color: #b03f76;
+} */
 
 li {
 	color: #191919;
@@ -96,8 +105,8 @@ li {
 	position: relative;
 	justify-content: space-evenly;
 	text-align: left;
-	color: #191919;
-	background-color: #f5f5f5
+	color: #e20775;
+	background-color: #F9D8E7
 	
 }
 
@@ -118,70 +127,70 @@ li {
 
 .portrait {
 	height: 500px;
+	margin-top: 30px;
 	animation: 5s move forwards;
 
 }
 
+h1 {
+	font-family: Dillan;
+
+}
+
 h2 {
-	font-family: SourceCodeProBold;
+	font-family: Dillan;
 	font-size: 20px;
 }
 
+
 .title {
-	color: #628d8d;
-	font-family: SourceCodeProBold;
+	color: #A64962;
+	font-family: AlbaMatter;
+	font-size: 40px;
+}
+
+.data-wrangler-title {
+	color: #A66F74;
 	font-size: 35px;
-}
-
-.software-dev-title {
-	color: dimgrey;
-}
-
-.music-prod-title {
-	color: lightgrey;
+	font-family: Dillan;
 }
 	
 /* nav bar */
+
 
 .nav-bar {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	font-size: 18px;
-	width: 100%;	
-	background-color: #f5f5f5;
-	margin-top: 20px;
-
+	width: 100%;
+	
 }
 
 .nav-bar a {
 	text-decoration: none;
-	color: #191919;
+	font-size: 30px;
+	color: #A64962;
 	transition: 0.5s;
-	font-family: SourceCodeProRegular;
+	font-family: AlbaMatter;
 	
 }
 
 .nav-bar a:hover {
-	color: lightgrey;
-	font-size: 20px;
+	color: #ac96e8;
+	font-size: 35px;
 	transition: 0.5s;
-}
-
-.nav-list {
-	list-style-type: none;
-	
+	padding: 2rem;
 }
 
 a {
 	text-decoration: none;
-	color: #191919;
-	font-size: 12px;
+	color: #ff0909;
 }
-.nav-list{
+.nav-list {
 	display: inline-block;
 	padding: 10px 10px;
 	animation: 1s ease-out 0s 1 slideInTop;
+	
 }
 
 .list-item-1 {
@@ -215,34 +224,37 @@ a {
 	animation: 3s ease-out 0s 1 slideInTop;
 }
 
-.menu {
-	display: none;
-}
 
 /* footer */
-.flex-padding {
-	display: block;
-}
 
 .footer-list {
-	display: flex;
-	justify-content: center;
 	align-items: center;
 	font-size: 18px;
-	background-color: #f5f5f5;
+	animation: 2s fadeIn;
+}
+
+.ul-footer {
+
+}
+
+.footer-links {
 	
-	
+}
+
+.link-logo {
+	width: 30px;
 }
 
 .footer-links a {
 	list-style: none;
 	padding: 10px;
 	animation: 1s ease-out 0s 1s slideInBottom;
-	color: #191919;
-	font-family: SourceCodeProRegular;
-	
+	color: #A64962;
+	font-family: Dillan;
 
 }
+
+/* about */
 
 .image-container-about {
 	display: flex;
@@ -264,7 +276,6 @@ a {
 
 	.about-header {
 		padding-top: 1rem;
-		font-family: SourceCodeProBold;
 	}
 
 	.about-link {
@@ -311,90 +322,31 @@ a {
 		transition: 0.3s;
 	}
 
-	.video {
-		width: 720px;
-		height: auto;
-	}
 
 	.projects-div {
 		min-height: 89vh;
 	
 	}
 
-	.video-wrapper {
+	.footer-list {
+		font-size: 18px;
+		animation: 2s fadeIn;
+		position: absolute;
+	}
+
+	.ul-footer {
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		justify-content: left;
+		padding-top: 12rem;
+
 	}
 
-	.wow-title {
-		padding: 1rem;
-		animation: 2s fadeIn, 2s smallSlide;
-	}
 
-	.wow-facts-p {
-		padding-bottom: 2rem;
-		animation: 2s fadeIn, 2s  smallSlide;
-	}
-
-	video {
-		box-shadow: 10px 10px 30px #797979;
-		animation: 2s fadeIn, 2s smallSlide;
-	}
-
-	.email:hover {
-		font-size: 25px;
-		transition: 2s;
-	}
-	.email {
-		transition: 0.5s;
-		animation: 4s fadeIn;
-		text-decoration: underline;
-	}
+@media all and (max-width: 800px) {
 	
-	button {
-		padding: 20px 50px;
-		margin: 3rem;
-		border: none;
-		border-radius: 2%;
-		box-shadow: 10px 10px 30px #797979;
-		animation-delay: 10s;
-		animation: 3s fadeIn;
-		
-	}
-
-	iframe {
-		margin-top: 2rem;
-		margin-left: 20vw;
-		margin-right: 20vw;
-		height: 870px;
-		width: 47%
-		
-	}
-
-	.contact-div {
-		min-height: 89vh;
-		display: block;
-		padding-top: 40vh;
-	}
-
-
-@media all and (max-width: 700px) {
-	
-	.contact-div {
-		min-height: 87vh;
-		display: block;
-		padding-top: 40vh;
-	}
-
-	.video {
-		width: 320px;
-		height: 240px;
-	}
-
 	.nav-list {
 		width: 100%;
-		padding-top: 10px;
+		padding-top: 20px;
 		
 	}
 
@@ -403,31 +355,20 @@ a {
 
 	}
 
-	.flex-padding {
-		display: none;
-	}
-
-	.logo {
-		display: block;
-		position: relative;
-		top: 0px;
-		right: 45vw;
-		height: 30px;
-		margin-left: 10px;
-		margin-top: 10px;
-	}
 
 	.portrait {
-		height: 400px;
+		height: 300px;
+		position: absolute;
 	}
 
 	.image-container {
 		flex-direction: column;
+		padding-top: 10vh;
 		
 	}
 
 	body {
-		min-height: 90vh;
+		min-height: 89vh;
 		min-width: 100vw;
 		line-height: 1;
 	}
@@ -441,18 +382,15 @@ a {
 	}
 
 	.title {
-		color: #628d8d;
 		animation: 5s fadeIn;
 		padding-top: 1rem;
 	}
 	
-	.software-dev-title {
-		color: dimgrey;
+	.data-wrangler-title {
 		animation: 6s fadeIn;
 	}
 
-	.music-prod-title {
-		color: lightgrey;
+	.data-wrangler-title {
 		animation: 8s fadeIn;
 	}
 
@@ -486,6 +424,18 @@ a {
 	.projects-div {
 		min-height: 90vh
 
+	}
+
+	.footer-list {
+		font-size: 18px;
+		animation: 2s fadeIn;
+		position: unset;
+	}
+
+	.ul-footer {
+		display: flex;
+		justify-content: center;
+		padding-top: 28rem;
 	}
 
 
@@ -493,118 +443,25 @@ a {
 
 @media all and (max-width: 375px) {
 
-	.wow-facts-p {
-		padding-left: 2rem;
-		padding-right: 2rem;
+	.App {
+		height: 100vh
 	}
 
-
-	.contact-div {
-		min-height: 87vh;
-		display: block;
-		padding-top: 40vh;
-	}
-
-	.video {
-		width: 320px;
-		height: 240px;
-	}
-
-	.nav-list {
-		width: 100%;
-		padding-top: 10px;
+	.nav-bar a {
+		text-decoration: none;
+		font-size: 20px;
+		color: #A64962;
+		transition: 0.5s;
+		font-family: AlbaMatter;
 		
-	}
-
-	.container {
-		text-align: center;
-
-	}
-
-	.flex-padding {
-		display: none;
-	}
-
-	.logo {
-		display: block;
-		position: relative;
-		top: 0px;
-		right: 45vw;
-		height: 30px;
-		margin-left: 10px;
-		margin-top: 10px;
-	}
-
-	.portrait {
-		height: 300px;
 	}
 
 	.image-container {
-		flex-direction: column;
-		padding-top: 15vh;
-		
+		padding-top: 20px;
 	}
 
-	body {
-		min-height: 84vh;
-		min-width: 100vw;
-		line-height: 1;
+	header {
+		padding-top: 0px;
 	}
 
-	.piano-pic {
-		height: 250px;
-	}
-
-	.about-header {
-		padding-top: 1rem;
-	}
-
-	.title {
-		color: #628d8d;
-		animation: 5s fadeIn;
-		padding-top: 1rem;
-	}
-	
-	.software-dev-title {
-		color: dimgrey;
-		animation: 6s fadeIn;
-	}
-
-	.music-prod-title {
-		color: lightgrey;
-		animation: 8s fadeIn;
-	}
-
-	.image-container-about {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-top: 5vh;
-	animation: 2s fadeIn, 1.5s smallSlide;
-	}
-
-	.about-paragraph {
-		text-align: left;
-		padding: 2rem;
-		margin-left: 10px;
-		margin-right: 10px;
-
-	}
-
-	ul.skills-list {
-		display: grid;
-		grid-template-columns: repeat(2, minmax(140px, 200px));
-		padding: 0px;
-		margin: 20px 0px 0px;
-		overflow: hidden;
-		list-style: none;
-		padding-bottom: 2rem;
-
-	}
-
-	.projects-div {
-		min-height: 90vh
-
-	}
 }
