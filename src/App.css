@@ -94,9 +94,6 @@ body {
 	color: #b03f76;
 } */
 
-li {
-	color: #191919;
-}
 
 /* home page */
 .container {
@@ -132,17 +129,6 @@ li {
 
 }
 
-h1 {
-	font-family: Dillan;
-
-}
-
-h2 {
-	font-family: Dillan;
-	font-size: 20px;
-}
-
-
 .title {
 	color: #A64962;
 	font-family: AlbaMatter;
@@ -154,7 +140,17 @@ h2 {
 	font-size: 35px;
 	font-family: Dillan;
 }
-	
+
+h1 {
+	font-family: AlbaRegular;
+
+}
+
+h2 {
+	font-family: AlbaRegular;
+	font-size: 20px;
+}
+
 /* nav bar */
 
 
@@ -261,22 +257,27 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top: 5vh;
 	animation: 3s fadeIn, 2s smallSlide;
 	}
 
 	.about-paragraph {
 		text-align: left;
 		padding: 1rem;
-		margin-left: 20vw;
-		margin-right: 20vw;
 		line-height: 2;
+		color: #a74962
 
+	}
+
+	h2 {
+		color: #a74962
 	}
 
 	.about-header {
 		padding-top: 1rem;
+		color: #a74962;
 	}
+
+
 
 	.about-link {
 		font-size: 15px;
@@ -289,7 +290,18 @@ a {
 		padding: 0px;
 		margin: 20px 0px 0px;
 		overflow: hidden;
+		color: #a74962
 
+	}
+
+	.studies-body {
+		height: 95vh;
+		width: 100vw;;
+	}
+
+	.resume-body {
+		height: 95vh;
+		width: 100vw;;
 	}
 
 	.piano-pic {
@@ -317,11 +329,6 @@ a {
 		transition: 0.3s;
 	}
 
-	.skills-list li:hover {
-		font-size: 25px;
-		transition: 0.3s;
-	}
-
 
 	.projects-div {
 		min-height: 89vh;
@@ -344,9 +351,19 @@ a {
 
 @media all and (max-width: 800px) {
 	
+	/* home page */
 	.nav-list {
 		width: 100%;
 		padding-top: 20px;
+		
+	}
+
+	.nav-bar a {
+		text-decoration: none;
+		font-size: 20px;
+		color: #A64962;
+		transition: 0.5s;
+		font-family: AlbaMatter;
 		
 	}
 
@@ -354,7 +371,6 @@ a {
 		text-align: center;
 
 	}
-
 
 	.portrait {
 		height: 300px;
@@ -371,27 +387,30 @@ a {
 		min-height: 89vh;
 		min-width: 100vw;
 		line-height: 1;
+		color: #a66e74;
 	}
-
-	.piano-pic {
-		height: 300px;
-	}
-
-	.about-header {
-		padding-top: 1rem;
-	}
-
+	
 	.title {
 		animation: 5s fadeIn;
 		padding-top: 1rem;
 	}
-	
-	.data-wrangler-title {
-		animation: 6s fadeIn;
-	}
 
 	.data-wrangler-title {
 		animation: 8s fadeIn;
+	}
+
+	/*about*/
+
+	.about-body {
+		height: 80vh;
+	}
+
+	.piano-pic {
+		height: 200px;
+	}
+
+	.about-header {
+		padding-top: 0rem;
 	}
 
 	.image-container-about {
@@ -399,7 +418,7 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top: 5vh;
+	padding-top: 0vh;
 	animation: 2s fadeIn, 1.5s smallSlide;
 	}
 
@@ -460,8 +479,18 @@ a {
 		padding-top: 20px;
 	}
 
-	header {
+	.about-body {
+		height: 80vh;
+		width: 100vw;
 		padding-top: 0px;
 	}
 
+	.image-container-about {
+		padding-top: 0px;
+	}
+
+	.bio-container-about {
+		height: 71vh;
+		padding-top: 0px;
+	}
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import reginaPic from './pics/reginaPic.jpg';
 import reginaPic2 from './pics/reginaPic-2.jpg';
 import instagram from './pics/instagram.png'
 import linkedin from './pics/linkedin.png'
