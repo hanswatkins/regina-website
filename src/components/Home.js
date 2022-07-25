@@ -22,7 +22,7 @@ const Home = () => {
         <ul className='ul-footer'>
             <li className="footer-links"><a href="tel:+1-360-961-7947"><img src={iphone} alt='' className='link-logo'></img></a></li>
             <li className="footer-links"><a href="mailto:reginajdoria@gmail.com"><img src={mailbox} className='link-logo' alt=''></img></a></li>
-            <li className="footer-links"><a href="https://www.linkedin.com/in/hanswatkins"><img className="link-logo" src={linkedin} alt='linkedin logo'></img></a></li>
+            <li className="footer-links"><a href="https://www.linkedin.com/in/reginajdoria"><img className="link-logo" src={linkedin} alt='linkedin logo'></img></a></li>
             <li className="footer-links"><a href="https://www.instagram.com/prod_arbour"><img className="link-logo" src={instagram} alt='instagram logo'></img></a></li>
         </ul>
     </div>
