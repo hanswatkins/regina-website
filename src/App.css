@@ -173,9 +173,7 @@ h2 {
 
 .nav-bar a:hover {
 	color: #ac96e8;
-	font-size: 35px;
 	transition: 0.5s;
-	padding: 2rem;
 }
 
 a {
@@ -220,6 +218,9 @@ a {
 	animation: 3s ease-out 0s 1 slideInTop;
 }
 
+.studies-body {
+	color:#a74962
+}
 
 /* footer */
 

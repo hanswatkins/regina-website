@@ -29,7 +29,7 @@ const About = () => {
                             <li>&#10095;SciKit</li>
                             <li>&#10095;SciPy</li>
                         <li>&#10095; R</li>
-                        <li>&#10095; Sequel</li>
+                        <li>&#10095; SQL</li>
          
                     </ul>
                 </div>
